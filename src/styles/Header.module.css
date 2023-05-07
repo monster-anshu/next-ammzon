@@ -1,0 +1,115 @@
+.pg_header .top_container{
+    justify-content: space-between;
+
+}
+
+.pg_header .top_container > *:not(.search_bar){
+    border: 1px solid transparent;
+    padding: 0.4vw;
+    height: 80%;
+    cursor: pointer;
+}
+
+.text_lined{
+    display: flex;
+    flex-direction: column;
+}
+
+.top_container{
+    height: 4rem;
+    padding-right: 1vw;
+    column-gap: 0.1vw;
+    object-fit: fill;
+}
+
+.top_container *{
+    line-height: 1em !important;
+}
+
+.top_container img{
+    /* height: 100%; */
+    object-fit: contain;
+}
+
+.location_text > *{
+    font-weight: 600;
+}
+
+.search_bar{
+    border-radius: 0.3em;
+    width: 100%;
+    height: 66%;
+    overflow: hidden;
+}
+
+.search_bar:focus-within{
+    outline: 0.2em solid #f79534 ;
+    box-shadow: 0 0 0 9999px #00000088;
+    z-index: 10;
+}
+
+.search_bar input{
+    padding: 1vw;
+    height: 100%;
+    width: 100%;
+}
+
+.search_bar input:focus{
+    outline: none;
+}
+
+.langauge_container select{
+    background: transparent;
+}
+.langauge_container select:focus-visible{
+    outline: none;
+}
+
+.lang_flag_img{
+    border-radius: 0.1em ;
+}
+
+.account_container{
+    position: relative;
+}
+
+.account_auth_container{
+    background-color: white;
+    padding: 1em;
+    width: 10em;
+    position: absolute;
+    border-radius: 0.4em;
+    bottom: -4rem;
+    left: -1rem;
+}
+
+.cart_container{
+    position: relative;   
+}
+
+.cart_container span{
+    position: absolute;
+    top: -4%;
+    left: 8%;
+}
+
+/* Sec Container */
+
+.sec_container{
+    padding-left: 1vw;
+    overflow: hidden;
+}
+
+.sec_container > *{
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 0.5em 0.7vw;
+    border: 1px solid transparent;
+}
+
+@media screen and (min-width: 768px) {
+    .pg_header .top_container> *:not(.search_bar):hover,
+    .sec_container > *:hover{
+        border-color: white;
+    }
+}

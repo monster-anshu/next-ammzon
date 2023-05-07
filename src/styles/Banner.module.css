@@ -1,0 +1,41 @@
+.carousel_image{
+    /* max-height: 70vh; */
+    object-fit:cover;
+}
+
+.carousel_container{
+    position: relative;
+}
+
+.carousel_container::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+    top: 0;
+    content: "";
+    pointer-events: none;
+    background: linear-gradient(-180deg,rgba(234,237,237,0), #e3e6e604 ,#e3e6e6);
+}
+
+.carousel_wrapper > div > button{
+    padding: 1em !important;
+    opacity: 0.8 !important;
+    height: calc(100% + (var(--card-banner-shift) * 2.5)) !important;
+}
+
+.carousel_wrapper > div > button:hover{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.235), rgba(0, 0, 0, 0)) !important;
+
+}
+
+@media screen and (max-width: 768px) {
+    .carousel_image{
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carousel_wrapper > div > ul:nth-child(1){
+        bottom: 10%;
+    }
+}

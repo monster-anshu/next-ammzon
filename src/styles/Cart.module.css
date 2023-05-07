@@ -1,0 +1,19 @@
+.left_container{
+    flex: 7;
+    background-color: white;
+}
+
+.right_container{
+    flex: 2;
+    background-color: white;
+}
+
+@media screen and (min-width:768px) and (max-width:1020px) {
+    .left_container{
+        flex: 8;
+    }
+    
+    .right_container{
+        flex: 3;
+    }    
+}

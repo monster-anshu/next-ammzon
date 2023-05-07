@@ -1,0 +1,5 @@
+export {default as Header} from './Header/Header'
+export {default as Banner} from './Banner/Banner'
+export {default as ProductFeed} from './ProductFeed/ProductFeed'
+export {default as CartFeed} from './Cart/CartFeed'
+export {default as CartPayout} from './Cart/CartPayout'
